@@ -1,0 +1,291 @@
+<!doctype <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/tajLogo.png" alt="logo" />
+            <h5 id="logoDescription" class="logoDescription">Taste Of India</h5>
+        </div>
+        <div class="brand">
+        <!-- <nav class="pure-drawer" id="menu-drawer" data-position="right">
+            
+        <div class="row collapse">
+            <div class="large-12 columns">
+                <ul class="nav-primary">
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+
+                   
+                </ul>
+            </div>
+        </div>
+        </nav> -->
+        
+        <div class="row">
+            <ul class="main-nav">
+                <li><a href="#"> HOME </a></li>
+                <li>
+                    <a href="#"> ABOUT US</a>
+                </li>
+                <li id="openMenu">
+                    <a href="#"  data-effect="pure-effect-scaleRotate" data-toggle="drawer" data-target="#menu-drawer" for="menuToggle">OUR MENU</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT </a>
+                </li>
+                <li>
+                    <a href="#"><img src="" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="brand" id="menu-drawer" class="alert alert-danger" hidden >
+        <nav class="menu"  data-position="right">
+                <ul><li><h4 style="text-align: center; padding-top: 10px; font-size:25px; font-weight:bold">MENU</h4></li>
+
+                <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">SOUPS</h4></li>
+                    <li>Tomato Soup <br> <label>$5.95<label></li>
+                    <li>Veg-Sweetcorn Soup <br><label>$6.95<label></li>
+                     <li>Chicken Soup <br> <label>$6.95<label></li>
+                    <li>Goat Curry Soup <br><label>$6.95<label></li>
+
+                <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">VEGETARIAN</h4></li>
+                    <li>Chat Samosa <br> <label>$7.95<label></li>
+                    <li>Aloo Tikki Chat <br><label>$7.95<label></li>
+                     <li>Tandoori Veg Platter <br><label>$10.95<label></li>
+                     <li>Chat Papdi <br> <label>$7.95<label></li>
+                    <li>Tandoori Paneer Tikka <br><label>$15.95<label></li>
+                     <li>Chilli Mushrooms <br> <label>$10.95<label></li>
+                     <li>Malai Kofta <br><label>$15.95<label></li>
+                    <li>Shahi Paneer <br><label>$15.95<label></li>
+                     <li>Kadhai Paneer <br> <label>$12.95<label></li>
+                    <li>Navratan Korma <br><label>$12.95<label></li>
+                     
+                     <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">NON VEGETARIAN</h4></li>
+                    <li>Chicken Tikka Masala <br><label>$20.95<label></li>
+                     
+                    <li>Mix Non-Veg Platter <br><label>$15.99<label></li>
+                     <li>Chilly Lamb <br> <label>$17.95<label></li>
+                    
+                     <li>Chicken Lollipop <br> <label>$20.95<label></li>
+                    <li>Tangri Kebab <br><label>$18.95<label></li>
+                    <li>Butter Chicken <br> <label>$20.95<label></li>
+                    <li>Goat Vindaloo<br><label>$16.95<label></li>
+                     <li>Kadhai Chicken <br> <label>$16.95<label></li>
+                    <li>Lamb Rogan Josh <br><label>$18.95<label></li>
+                     <li>Lamb Jalfrezi <br> <label>$18.95<label></li>
+
+                     <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">SEA-FOOD</h4></li>
+                     <li>Tandoori Salmon <br> <label>$25.95<label></li>
+                     <li>Chilly Shrimp <br><label>$17.95<label></li>
+                    <li>Fish Curry <br><label>$22.95<label></li>
+                    <li>Shrimp Curry<br><label>$17.95<label></li>
+                    <li>Fish Begum Bahar <br><label>$15.95<label></li>
+                    <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">RICE/BIRYANI</h4></li>
+                     <li>Jeera Rice <br> <label>$8.95<label></li>
+                     <li>Veg Biryani <br><label>$15.95<label></li>
+                    <li>Chicken Biryani <br><label>$15.95<label></li>
+                    <li>Hydrabadi Biryani <br><label>$15.95<label></li>
+                    <li>Shrimp Biryani<br><label>$15.95<label></li>
+                    <li>Goat Biryani <br><label>$15.95<label></li>
+
+                    <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">BREAD</h4></li>
+                     <li>Tandoori Roti<br> <label>$2.95<label></li>
+                     <li>Rumali Roti<br><label>$3.95<label></li>
+                    <li>Plain Naan <br><label>$2.95<label></li>
+                    <li>Garlic Naan<br><label>$4.95<label></li>
+                   
+                    <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">DESSERTS</h4></li>
+                     <li>Gulab Jamun<br> <label>$6.95<label></li>
+                     <li>Rasmalai<br><label>$5.95<label></li>
+                    <li>Vanilla Ice-Cream <br><label>$5.95<label></li>
+                    <li>Kheer<br><label>$4.95<label></li>
+                    <li>Gajar Halwa <br><label>$5.95<label></li>
+
+                    <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">BEVERAGES</h4></li>
+                     <li>Soft Drink<br> <label>$2.95<label></li>
+                     <li>Tea<br><label>$5.95<label></li>
+                    <li>Mango Lassi <br><label>$5.95<label></li>
+                    <li>Pina Colada<br><label>$4.95<label></li>
+                   
+                    <li><h4 style="text-align: center; padding-top: 10px; font-size:20px;  font-weight:bold">FROM THE BAR</h4></li>
+                     <li>Red Wine<br> <label>$11.95<label></li>
+                     <li>White Wine<br><label>$11.95<label></li>
+                    
+
+                     
+                    
+             </ul>
+        </nav>
+        </div>
+        <div class="hdr">
+            <h1 class="message">Authentic Indian Restaurant</h1>
+            <div class="button">
+                <button class="btn btn-warning btn-view" id="btnTodaySpecial"><a href="#">Today's Special</a></button>
+         <div class="alert alert-danger" role="alert" id="today-special" hidden>Today You may want to order </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="features">
+        <h3 class="text-center">OUR SPECIALITIES</h3>
+        <p class="feature_para">
+            Our chefs have created dishes that borrow from the past, yet are reinvented anew with vibrancy and modern flair. Upon entering the restaurant, you'll be greeted by the peaceful in hand-carved wooden panels, the glow from fiber-optic chandeliers, and the shimmer of a waterfall cascading into a pool of lotus petals. We invite you to join us for an exquisite dining experience.
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <i class="fa fa-certificate"></i>
+                    <h5 class="text-center">OPENING HOURS</h5>
+                    <p class="arranging">
+                        Mon 11:30 am - 10:00 pm 
+                        Tue 11:30 am - 10:00 pm 
+                        Wed 11:30 am - 10:00 pm 
+                        Thu 11:30 am - 10:00 pm 
+                        Fri 12:00 pm - 10:30 pm 
+                        Sat 12:00 pm - 10:30 pm 
+                        Sun 11:30 am - 10:00 pm 
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-camera"></i>
+                    <h5 class="text-center">READY IN 20 MINUTES</h5>
+                    <p class="arranging">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-envelope"></i>
+                    <h5 class="text-center">100% ORGANIC</h5>
+                    <p class="arranging">
+                        All our food is organically grown without applying  any preservatives, synthetic pesticides or inorganic fertilizers. This leads to the production of high-quality crops, which in turn means better feed for livestock and better food for human beings. 
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-cog"></i>
+                    <h5 class="text-center">ORDER ONLINE</h5>
+                    <p class="arranging">
+                        We are willing deliver delicious, all-natural, chef-crafted dishes right to your door. So don't delay and Call us on our number to place your order and be ready to enjoy the taste of India wherever you are.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meal">
+        <ul class="meal-showcase">
+            <li>
+                <figure class="meal-photo">
+                    <img src="images/img1.jpg" alt="pic 1">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="images/austin-moncada-186841.jpg" alt="pic 2">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="images/etienne-pauthenet-153636.jpg" alt="pic 3">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="images/img4.jpg" alt="pic 4">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <form action="insertdata.jsp" method ="post">
+    <section class="form">
+        <div class="container">
+        <div class=""></div>
+            <h3 class="text-center last-heading-message" > LEAVE A FEEDBACK</h3>
+        </div>
+        <div class="row gap">
+            <div class="col-md-6" id="feedback-input">
+                <input type="text" name="yourname" placeholder="Your name" class="form-control">
+                <br>
+                <input type="email" name="email"  placeholder="Your email" class="form-control">
+                <br>
+                <select  name="hear" class="form-control">
+                    <option>How did you hear about us?</option>
+                    <option value="friends">Friend</option>
+                    <option value="website">Website</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="Internet">Internet</option>
+                </select>
+                <br>
+                <textarea class="form-control" name="customerFeedback" rows="8" placeholder="comments"></textarea>
+                <br>
+                <button class="btn btn-warning" id="submitFeedback">Submit</button>
+                <br>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    </form>
+    <div id="displayFeedback">
+        <ol  class="list-group" id="displayFeedbackList"></ol>
+    </div>
+    <footer class="footter">
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-md-4 alignmt">
+                        <p></p>
+                    </div>
+                    <div class="col-md-4 alignmt">
+                        <p><i class="fa fa-copyright"></i>Copyrights Reserved &nbsp;2018&nbsp;Top Technologies</p>
+                    </div>
+                    <div class="col-md-4 alignmt ">
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook fafastyle"></i>&nbsp;</a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-twitter fafastyle"></i>&nbsp;</a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram fafastyle"></i>&nbsp;</a>
+                            <a href="https://www.google.com/"><i class="fa fa-google-plus fafastyle"></i></a>
+                        </div>
+                    </div>
+            </section>
+            </div>
+    </footer>
+
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>
